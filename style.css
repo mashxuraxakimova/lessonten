@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 80%;
+    height: 400px;
+    border: 1px solid red;
+    margin: auto;
+}
+.p{
+    color: red;
+    display: inline;
+    border: 1px solid blue;
+
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+}
+.span{
+    color: blue;
+    display: block;
+    border: 1px solid green;
+
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gold;
+    display: inline-block;
+    margin-top: 20px;
+}
+.hidden{
+    width: 300px;
+    height: 50px;
+    background: blue;
+    opacity: .05;
+    display: none;
+}
+.photo{
+    width: 300px;
+    display: block;
+    margin: 30px auto;
+
+    /* blur = bjr-bjr (0px) */
+    filter: blur(5px);
+
+    /* brightness - yorug'lk (100%) */
+    filter: brightness(150%);
+
+    /* filter-contrast - to'yintiradi (100%) */
+    filter: contrast(200%);
+
+    /* grayscale - oq-qora (0%) */
+    filter: grayscale(100%);
+
+    /* hue-rotate - rang-barang (0deg) */
+    filter: hue-rotate(160deg);
+
+    /*v invert - rentgen (0%) */
+    filter: invert(100%);
+
+    /* saturate - to'yintiradi (100%) */
+    filter: saturate(150%);
+
+    /* sepia - 80 yillar (0%) */
+    filter: sepia(100%);
+
+    filter: blur(1px) grayscale(100%) invert(100%);
+    transition: .5s;
+}
+.photo:hover{
+    filter: none;
+}
+
+.main{
+    border: 1px solid red;
+}
+/* > - only for children */
+/* + - only for first neighbour */
+/* ~ - for all neighbours */
+
+
+.main ~ p{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
